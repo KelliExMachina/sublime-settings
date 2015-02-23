@@ -1,0 +1,621 @@
+{
+  // List of user-configurable presets.
+  "camaleon": [
+    [
+      null,
+      "Packages/Color Scheme Custom/3024_Day.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/3024_Night.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Abyss.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Active4D.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/All Hallow's Eve.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/All_Hallows_Eve.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Amy.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Aurora.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Blackboard.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/BlueDawn.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/BlueLover.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Boron.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/BoxUK.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Brilliance_Black.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Brilliance_Dull.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Brunette.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Calydon light.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Calydon plain.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Calydon.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/CandyLand.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Carbonight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/CarbonightBlue.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Carbonnight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Choco.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Chrome_DevTools.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Clouds.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Clouds_Midnight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Cobalt.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/CodeWarrior.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Colonoscopy.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Dark_Krystal.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Darkside.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Dawn.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Dracula.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Dreamweaver.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Druid.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Earthsong.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/EarthsongLight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Eiffel.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Espresso Libre.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Espresso_Libre.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Facebook.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Finder Light.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Finder.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/FireCode.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Flat.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/FreshCut.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Frontier.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Future_Funk.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Github.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Gloom.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Glowfish.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Goldfish.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Grunge.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/HalfLife.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Harper.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Hyrule.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/IDLE.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/IR_Black.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Iceberg.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Juicy.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Kimbie_dark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Kimbie_light.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/KoralGreen.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/LAZY.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Laravel.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/LaravelDarker.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/LastNight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Lava.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Lavender.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Mac Classic.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/MagicWB (Amiga).tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/MagicWB_Amiga.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Mcedit.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Mellow.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Merbivore.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Merbivore_Soft.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Monokai Bright.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Monokai-Vivid.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Monokai.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Mustard.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Muukii.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/NaturalContrast.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/NetBeans.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Oblivion.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Paraiso_dark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Paraiso_light.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Pastels on Dark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Pastels_on_Dark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Patriot.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Peacock.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Potpourri.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Poyeyo.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Poyeyo_Blue.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Revelation.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/SalmonOnIce.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Seahorse.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Slime.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Slush & Poppies.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Slush_and_Poppies.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Snappy.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/SnappyLight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/SolarSooty.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Solarflare.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Solarized (Dark).tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Solarized (Light).tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Solarized-dark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Solarized-light.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Sourlick.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/SpaceCadet.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Spearmint.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Stark.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Stereokai.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Sunburst.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Sweet_Dreams.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Symfony.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow-Night-Blue.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow-Night-Bright.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow-Night-Eighties.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow-Night.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow_Night.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow_Night_Blue.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow_Night_Bright.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tomorrow_Night_Eighties.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/ToyMachine.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tron.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/TronLegacy.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/TronLight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Twilight.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/TwoStones.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tyrann Alex.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tyrann Blue.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Tyrann.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Userscape.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Vibrant_Ink.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/WarpOS.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Welded.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Whiteboard.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Xcode_default.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Yule.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/Zenburnesque.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/ant.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/deep_blue_see.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/dimmed-monokai.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/dimmed-night.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/dimmed-storm.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/dimmed.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/iPlastic.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/idleFingers.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/krTheme.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/monoindustrial.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/spectral.tmTheme"
+    ],
+    [
+      null,
+      "Packages/Color Scheme Custom/textmate.tmTheme"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "keys": ["super+control+a"], "command": "align_tab",
+    "args" : {"live_preview" : true}
+  },
+  {
+    "keys": ["ctrl+d"],
+    "command": "plain_tasks_complete",
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.todo"
+      }
+    ]
+  }
+]

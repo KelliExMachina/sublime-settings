@@ -1,0 +1,18 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"Markdown Extended",
+		"nginx",
+		"Package Control",
+		"PlainTasks",
+		"PostgreSQL Syntax Highlighting",
+		"Project Manager",
+		"RSpec",
+		"Rust",
+		"Theme - Spacegray"
+	]
+}

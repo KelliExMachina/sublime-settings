@@ -1,0 +1,13 @@
+{
+	"extensions":
+	[
+		"Vagrantfile",
+		"ru",
+		"Cheffile",
+		"rb",
+		"thor",
+		"Mercfile",
+		"Guardfile",
+		"jbuilder"
+	]
+}

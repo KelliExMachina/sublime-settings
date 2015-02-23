@@ -1,0 +1,12 @@
+{
+  "named_patterns": {
+    "first_equal"  : "=/f",
+    "first_comma"  : ",/f",
+    "first_colon"  : ":/f",
+    "first_rocket" : "=>/f",
+    "all_and"      : "&",
+    "all_bar"      : "\\|",
+    "all_space"    : "\\s*/l1l0"
+  },
+  "auto_match_enabled": false
+}
