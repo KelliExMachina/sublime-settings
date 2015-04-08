@@ -1,3 +1,4 @@
-*.cache
-*.pyc
-.DS_*
+*.sublime-project
+*.sublime-workspace
+
+.DS_Store

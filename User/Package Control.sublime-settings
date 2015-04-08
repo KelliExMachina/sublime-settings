@@ -5,6 +5,8 @@
 	"installed_packages":
 	[
 		"AlignTab",
+		"API Blueprint",
+		"EditorConfig",
 		"Git",
 		"Git Config",
 		"GitGutter",
