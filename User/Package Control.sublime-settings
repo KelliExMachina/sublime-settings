@@ -4,15 +4,20 @@
 	],
 	"installed_packages":
 	[
+		"ActionScript 3",
 		"AlignTab",
 		"API Blueprint",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Git",
 		"Git Config",
 		"GitGutter",
+		"Handlebars",
 		"Jekyll",
 		"Jinja2",
 		"Markdown Extended",
+		"MarkdownEditing",
 		"nginx",
 		"Package Control",
 		"PlainTasks",
@@ -24,6 +29,7 @@
 		"Scheme",
 		"SublimeLinter",
 		"SublimeLinter-ruby",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"TOML"
 	]
 }

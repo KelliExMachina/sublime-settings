@@ -49,6 +49,9 @@
 	],
 	"folder_exclude_patterns":
 	[
+		".bower*",
+		".idea",
+		"bower_components",
 		".bundle",
 		".git",
 		".gradle",
@@ -65,7 +68,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"index_files": false,
 	"line_padding_bottom": 1,
