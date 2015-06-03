@@ -1,0 +1,10 @@
+{
+  "shell_cmd": "remarkable",
+  "selector": "text.md",
+  "osx": {
+    "shell_cmd": "open -a /Applications/Marked 2.app $file"
+  },
+  "linux": {
+    "shell_cmd": "remarkable $file"
+  }
+}

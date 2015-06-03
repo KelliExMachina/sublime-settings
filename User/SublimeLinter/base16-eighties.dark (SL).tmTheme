@@ -37,7 +37,7 @@
 				<key>invisibles</key>
 				<string>#747369</string>
 				<key>lineHighlight</key>
-				<string>#393939</string>
+				<string>#74736955</string>
 				<key>selection</key>
 				<string>#515151</string>
 			</dict>
@@ -360,7 +360,7 @@
 			<key>name</key>
 			<string>Link Text</string>
 			<key>scope</key>
-			<string>string.other.link</string>
+      <string>string.other.link, punctuation.definition.string.end.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -417,7 +417,7 @@
 			<key>name</key>
 			<string>Inserted</string>
 			<key>scope</key>
-			<string>markup.inserted, markup.inserted.git_gutter</string>
+			<string>markup.inserted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -428,7 +428,7 @@
 			<key>name</key>
 			<string>Deleted</string>
 			<key>scope</key>
-			<string>markup.deleted, markup.deleted.git_gutter</string>
+			<string>markup.deleted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -439,33 +439,11 @@
 			<key>name</key>
 			<string>Changed</string>
 			<key>scope</key>
-			<string>markup.changed, markup.changed.git_gutter</string>
+			<string>markup.changed</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#cc99cc</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Ignored</string>
-			<key>scope</key>
-			<string>markup.ignored, markup.ignored.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#515151</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Untracked</string>
-			<key>scope</key>
-			<string>markup.untracked, markup.untracked.git_gutter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#515151</string>
 			</dict>
 		</dict>
 		<dict>
@@ -514,7 +492,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Invalid</string>
+			<string>Illegal</string>
 			<key>scope</key>
 			<string>invalid.illegal</string>
 			<key>settings</key>
@@ -522,20 +500,49 @@
 				<key>background</key>
 				<string>#f2777a</string>
 				<key>foreground</key>
+				<string>#f2f0ec</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Broken</string>
+			<key>scope</key>
+			<string>invalid.broken</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#f99157</string>
+				<key>foreground</key>
 				<string>#2d2d2d</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Deprecated</string>
+			<key>scope</key>
+			<string>invalid.deprecated</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#d27b53</string>
+				<key>foreground</key>
+				<string>#f2f0ec</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Unimplemented</string>
+			<key>scope</key>
+			<string>invalid.unimplemented</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#747369</string>
+				<key>foreground</key>
+				<string>#f2f0ec</string>
+			</dict>
+		</dict>
 	<dict>
-            <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
-            <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict><dict>
             <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
@@ -544,6 +551,16 @@
             <dict>
                 <key>foreground</key>
                 <string>#D02000</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -557,6 +574,6 @@
             </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>36594751-36ac-443a-9f2f-111b815085cf</string>
+	<string>1f979572-471a-41a9-8e3f-3eeb97853296</string>
 </dict>
 </plist>

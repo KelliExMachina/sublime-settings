@@ -64,12 +64,12 @@
 		"node_modules"
 	],
 	"font_face": "Source Code Pro Medium",
-	"font_size": 14,
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"index_files": false,
 	"line_padding_bottom": 1,

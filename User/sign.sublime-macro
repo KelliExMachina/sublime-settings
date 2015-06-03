@@ -1,0 +1,4 @@
+[
+	{"command": "insert", "args": { "characters": "@warmwaffles "}},
+  {"command": "insert_date", "args": {"format": "%Y-%m-%d"}}
+]
