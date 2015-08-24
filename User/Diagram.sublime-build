@@ -1,0 +1,11 @@
+{
+  "cmd": ["plantuml", "$file"],
+  "selector": "source.diagram",
+  "variants": [
+    {
+      "name": "Remove generated",
+      "cmd": ["rm $file_path/$file_base_name.png"],
+      "shell": true
+    }
+  ]
+}

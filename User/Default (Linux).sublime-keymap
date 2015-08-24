@@ -1,4 +1,7 @@
 [
   { "keys": ["ctrl+alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
-  { "keys": ["ctrl+e"], "command": "insert_date", "args": {"format": "%Y-%m-%d"}  }
+  { "keys": ["ctrl+e"], "command": "insert_date", "args": {"format": "@warmwaffles %Y-%m-%d"}  },
+  { "keys": ["ctrl+alt+a"], "command": "align_tab", "args" : {"live_preview" : true} },
+  { "keys": ["ctrl+1"], "command": "plain_tasks_convert_to_html","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+  { "keys": ["f5"], "command": "revert" }
 ]

@@ -1,0 +1,74 @@
+{
+	"always_show_minimap_viewport": true,
+	"atomic_save": true,
+	"auto_complete": false,
+	"binary_file_patterns":
+	[
+		"*.dds",
+		"*.eot",
+		"*.gif",
+		"*.ico",
+		"*.jar",
+		"*.jpeg",
+		"*.jpg",
+		"*.pdf",
+		"*.png",
+		"*.swf",
+		"*.tga",
+		"*.ttf",
+		"*.zip"
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
+	"drag_text": false,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.a",
+		"*.class",
+		"*.db",
+		"*.dll",
+		"*.dylib",
+		"*.exe",
+		"*.idb",
+		"*.lib",
+		"*.ncb",
+		"*.o",
+		"*.obj",
+		"*.pdb",
+		"*.psd",
+		"*.pyc",
+		"*.pyo",
+		"*.sdf",
+		"*.so",
+		"*.sublime-workspace",
+		"*.suo",
+		".DS_Store"
+	],
+	"folder_exclude_patterns":
+	[
+		".bower*",
+		".idea",
+		"bower_components",
+		".bundle",
+		".git",
+		".gradle",
+		".hg",
+		".idea",
+		".metadata",
+		".svn",
+		".vagrant",
+		".yardoc",
+		"node_modules"
+	],
+	"font_face": "Source Code Pro Medium",
+	"font_size": 13,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	]
+}
