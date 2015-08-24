@@ -223,7 +223,11 @@
 				                | (?&lt;!\w) __typeof | (?&lt;!\w) __typeof__ )
 				            (?&lt;= \w ) \s
 
+<<<<<<< 609fff03785e1e494645bc7ebae8b5a056dab4d8
         				  | #  or type modifier / closing bracket before name
+=======
+					  | #  or type modifier / closing bracket before name
+>>>>>>> saving
 				            (?&lt;= [^&amp;]&amp; | [*&gt;)}\]] ) ) \s*
 
 				        (?: [A-Za-z_]\w*+ | ::[^:] )++
@@ -304,8 +308,13 @@
 
 				(?= (?:\s|/\*.*?\*/)*+ (?'parens' \(
 				            (?&gt; \g'parens' |
+<<<<<<< 609fff03785e1e494645bc7ebae8b5a056dab4d8
 				            	"(\\.|[^"])*" | '(\\.|[^'])*' | /\*.*?\*/ |
 				            	(?! /[/*] | [()] ) . )*
+=======
+						"(\\.|[^"])*" | '(\\.|[^'])*' | /\*.*?\*/ |
+						(?! /[/*] | [()] ) . )*
+>>>>>>> saving
 				        \) ) \s* ; )
 			</string>
 			<key>beginCaptures</key>

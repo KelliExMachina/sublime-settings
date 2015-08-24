@@ -134,4 +134,7 @@ In the latter case you can rebind them to be handled by C Improved through *View
 
 Other languages derived from C (like C++ and Objective C) don't need their syntaxes to be changed to something special:
 they usually extend `source.c` under the hood, which is now provided by C Improved syntax.
+<<<<<<< 609fff03785e1e494645bc7ebae8b5a056dab4d8
 
+=======
+>>>>>>> saving
