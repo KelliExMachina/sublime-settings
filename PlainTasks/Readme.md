@@ -28,7 +28,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 
 ☐ <kbd>⌘ + shift + o</kbd> will archive in Org-Mode style, removing the entire subtree after cursor and appending it to new file next to original one, e.g. if original is `filename.TODO` then new would be `filename_archive.TODO`
 
-☐ <kbd>⌘ + shift + u</kbd> will open the url under the cursor in your default browser
+☐ <kbd>⌘ + shift + u</kbd> will open the url under the cursor in your default browser, other than http(s) schemes must be enclosed within `<>`, e.g. `<skype:nickname>`
 
 ☐ Anything with colon at the end of the line is a project title, you can also nest projects by indenting them. 
 
@@ -84,7 +84,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
         </table>
 
     - relative period of time starts with a plus sign or two  
-      __`+[+][number][DdWw]`__ — number is optional as well as letter `d` for days or letter `w` for weeks.
+      __`+[+][number][DdWw][h:m]`__ — number is optional as well as letter `d` for days or letter `w` for weeks.
 
         <table>
          <tr>
@@ -106,6 +106,18 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
           <td>  <code>@due(++)</code>   </td>
           <td>  one day since <code>@created(date)</code> if any, otherwise it is equal to <code>@due(+)</code></td>
          </tr>
+         <tr>
+          <td>  <code>@due(+2:)</code>   </td>
+          <td>  two hours since current date</td>
+         </tr>
+         <tr>
+          <td>  <code>@due(+:555)</code>   </td>
+          <td>  555 minutes since current date</td>
+         </tr>
+         <tr>
+          <td>  <code>@due(+2 12:)</code>   </td>
+          <td>  2 days and 12 hours since current date</td>
+         </tr>
         </table>
 
 ☐ You can create a link to a file within your project by prefixing the file name with a dot and (back)slash like: `.\filename\` or `./another filename/`.  
@@ -113,6 +125,21 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
   In SublimeText 3 you can specify a symbol inside that file by using \> character like: `.\filename>symbol`.  
   In SublimeText 2 you can specify a text inside that file by using inch characters like: `.\filename"any text"`.  
   Pressing <kbd>ctrl + o</kbd> (<kbd>alt + o</kbd> on Windows/Linux) will open the file in Sublime and scroll to specific position if any.
+  In addition, Markdown and “wiki” (Org-Mode, NV, etc.) styles are supported as well, examples:
+
+```
+[](path)
+[](path ":11:8")
+[](path ">symbol")
+[](path "any text")
+[[path]]
+[[path::11:8]]
+[[path::*symbol]]
+[[path::any text]]
+[[path]] ":11:8"
+[[path]] ">symbol"
+[[path]] "any text"
+```
 
 ☐ To convert current document to HTML, bring up the command palette <kbd>⌘ + shift + p</kbd> and type `Tasks: View as HTML` — it will be opened in default webbrowser, so you can view and save it.
 
@@ -142,9 +169,9 @@ Here is a list of PlainTasks’ specific settings:
 | **before_tasks_bullet_margin** | 1                | Determines the number of spaces (default indent) before the task bullet |
 | **project_tag**                | true             | Postfix archived task with project tag, otherwise prefix                |
 | **archive_name**               | `Archive:`       | Make sure it is the unique project name within your todo files          |
-| **indent_after_task**          | true             | Determines whether next line after task should be indented or not       |
 | **new_on_top**                 | true             | How to sort archived tasks (done_tag=true and default date_format are required)|
 | **header_to_task**             | absent (false)   | If true, a project title line will be converted to a task on the certain keystroke  |
+| **decimal_minutes**            | absent (false)   | If true, minutes in lasted/wasted tags will be persent of hour, e.g. 1.50 instead of 1:30 |
 | **tasks_bullet_space** | absent (whitespace or tab) | String to place after bullet, might be any character(s) |
 
 
