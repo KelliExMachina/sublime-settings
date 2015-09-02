@@ -124,7 +124,7 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
   The line and column can be specified by colons: `.\filename:11:8`.  
   In SublimeText 3 you can specify a symbol inside that file by using \> character like: `.\filename>symbol`.  
   In SublimeText 2 you can specify a text inside that file by using inch characters like: `.\filename"any text"`.  
-  Pressing <kbd>ctrl + o</kbd> (<kbd>alt + o</kbd> on Windows/Linux) will open the file in Sublime and scroll to specific position if any.
+  Pressing <kbd>ctrl + o</kbd> (<kbd>alt + o</kbd> on Windows/Linux) will open the file in Sublime and scroll to specific position if any.  
   In addition, Markdown and “wiki” (Org-Mode, NV, etc.) styles are supported as well, examples:
 
 ```
@@ -141,7 +141,8 @@ For more portability you can use `todolist.txt` either as a filename or as suffi
 [[path]] "any text"
 ```
 
-☐ To convert current document to HTML, bring up the command palette <kbd>⌘ + shift + p</kbd> and type `Tasks: View as HTML` — it will be opened in default webbrowser, so you can view and save it.
+☐ To convert current document to HTML, bring up the command palette <kbd>⌘ + shift + p</kbd> and type `Tasks: View as HTML` — it will be opened in default webbrowser, so you can view and save it.  
+`Tasks: Save as HTML…` ask if you want to save and if yes, allow to choose directory and filename (but won’t open it in webbrowser).
 
 ### Editor Useful Tools:
 
