@@ -7,6 +7,7 @@
 		"ActionScript 3",
 		"AlignTab",
 		"API Blueprint",
+		"Autotools",
 		"C Improved",
 		"CMake",
 		"DocBlockr",
@@ -33,9 +34,6 @@
 		"Rust",
 		"Sass",
 		"Scheme",
-		"SublimeAStyleFormatter",
-		"SublimeLinter",
-		"SublimeLinter-ruby",
 		"Theme - Spacegray"
 	]
 }
