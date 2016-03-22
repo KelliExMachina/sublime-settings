@@ -1,5 +1,1 @@
-<<<<<<< 609fff03785e1e494645bc7ebae8b5a056dab4d8
-{"url": "https://github.com/abusalimov/SublimeCImproved", "description": "Improved tmLanguage syntax for C and friends, with a special support for Linux kernel source, CPython interpreter, etc.", "sublime_text": "*", "dependencies": [], "platforms": ["*"], "version": "1.4.0"}
-=======
-{"url": "https://github.com/abusalimov/SublimeCImproved", "description": "Improved tmLanguage syntax for C and friends, with a special support for Linux kernel source, CPython interpreter, etc.", "platforms": ["*"], "version": "1.4.0", "dependencies": [], "sublime_text": "*"}
->>>>>>> saving
+{"dependencies": [], "platforms": ["*"], "url": "https://packagecontrol.io/packages/C%20Improved", "version": "1.9.2", "sublime_text": "*", "description": "Improved syntax for C/C++/Objective-C, with a special support for sources of Linux kernel, CPython, etc."}

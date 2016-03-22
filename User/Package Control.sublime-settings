@@ -1,6 +1,8 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"PKGBUILD"
 	],
 	"installed_packages":
 	[
@@ -8,6 +10,7 @@
 		"AlignTab",
 		"API Blueprint",
 		"C Improved",
+		"Clang Format",
 		"CMake",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
@@ -15,13 +18,17 @@
 		"Git",
 		"Git Config",
 		"GitGutter",
+		"GL Shader Validator",
 		"Handlebars",
+		"HTTP Spec Syntax",
 		"InsertDate",
 		"Jekyll",
 		"Jinja2",
+		"JsFormat",
 		"Makefile Improved",
 		"Markdown Extended",
 		"nginx",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"PKGBUILD",
 		"PlainTasks",
@@ -33,9 +40,9 @@
 		"Rust",
 		"Sass",
 		"Scheme",
+		"ShaderLanguages",
 		"SublimeAStyleFormatter",
-		"SublimeLinter",
-		"SublimeLinter-ruby",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"TOML"
 	]
 }

@@ -3,6 +3,7 @@
 	[
 		"json",
 		".bowerrc",
-		".jshintrc"
+		".jshintrc",
+		"gltf"
 	]
 }
