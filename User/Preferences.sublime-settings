@@ -92,5 +92,6 @@
 	"show_full_path": false,
 	"sidebar_default": true,
 	"theme": "predawn-DEV.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false
 }

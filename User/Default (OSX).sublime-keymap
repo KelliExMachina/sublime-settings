@@ -13,5 +13,8 @@
         "operand": "text.todo"
       }
     ]
+  },
+  {
+    "keys": ["super+option+a"], "command": "clang_format"
   }
 ]

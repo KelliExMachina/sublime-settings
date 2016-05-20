@@ -1,9 +1,0 @@
-{
-    "BasedOnStyle": "Mozilla",
-    "IndentWidth": 4,
-    "AllowShortFunctionsOnASingleLine": "None",
-    "AllowShortIfStatementsOnASingleLine": false,
-    "AllowShortLoopsOnASingleLine": false,
-    "SpaceBeforeParens": "Never",
-    "UseTab": "Never"
-}
