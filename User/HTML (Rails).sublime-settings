@@ -1,6 +1,8 @@
 {
 	"extensions":
 	[
-		"jst"
+		"rails",
+        "erb",
+		"html.erb",
 	]
 }

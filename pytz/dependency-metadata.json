@@ -1,1 +1,1 @@
-{"sublime_text": "*", "url": "https://github.com/packagecontrol/pytz/issues", "platforms": ["*"], "description": "Python pytz module", "version": "2015.4.0"}
+{"description": "Python pytz module", "version": "2015.4.0", "url": "https://github.com/packagecontrol/pytz/issues", "platforms": ["*"], "sublime_text": "*"}

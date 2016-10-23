@@ -1,9 +1,6 @@
 {
 	"extensions":
 	[
-		"markdown.erb",
-		"md",
-		"md.erb",
-		"markdown"
+		"md"
 	]
 }

@@ -62,7 +62,6 @@
 		"*.lib",
 		"*.ncb",
 		"*.o",
-		"*.obj",
 		"*.pdb",
 		"*.psd",
 		"*.pyc",
@@ -88,9 +87,13 @@
 		".vagrant",
 		".yardoc",
 		"node_modules",
-		".sass-cache"
+		".sass-cache",
+		".tags",
+		".tags_sorted_by_file",
+		".gemtags",
+		".asset-cache"
 	],
-	"font_face": "Source Code Pro Medium",
+	"font_face": "Hack",
 	"font_options":
 	[
 		"no_round"

@@ -1,7 +1,17 @@
 [
-  { "keys": ["ctrl+alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
-  { "keys": ["ctrl+e"], "command": "insert_date", "args": {"format": "@warmwaffles %Y-%m-%d"}  },
-  { "keys": ["ctrl+alt+a"], "command": "align_tab", "args" : {"live_preview" : true} },
-  { "keys": ["ctrl+1"], "command": "plain_tasks_convert_to_html","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
-  { "keys": ["f5"], "command": "revert" }
+    { "keys": ["ctrl+alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+    { "keys": ["ctrl+e"], "command": "insert_date", "args": {"format": "@warmwaffles %Y-%m-%d"}  },
+    { "keys": ["ctrl+alt+a"], "command": "align_tab", "args" : {"live_preview" : true} },
+    { "keys": ["ctrl+1"], "command": "plain_tasks_convert_to_html","context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }] },
+    { "keys": ["f5"], "command": "revert" },
+    { "keys": ["alt+d"], "command": "doxy_update_comments", "args": { "reparse": true }, "context":
+        [
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "comment, string.quoted.double.block.cython, string.quoted.single.block.cython, string.quoted.double.block.python, string.quoted.single.block.python",
+                "match_all": true
+            }
+        ]
+    }
 ]

@@ -8,7 +8,7 @@ a package manager
 for the [Sublime Text][] text editor.
 
 
-this repo | pypi
+this repo | pypi 
 ---- | ----
 ![latest tag](https://img.shields.io/github/tag/packagecontrol/pytz.svg) | [![pypi](https://img.shields.io/pypi/v/pytz.svg)][pypi]
 
