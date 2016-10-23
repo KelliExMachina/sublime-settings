@@ -93,15 +93,17 @@
 		".gemtags",
 		".asset-cache"
 	],
-	"font_face": "Hack",
+	"font_face": "Terminus",
 	"font_options":
 	[
 		"no_round"
 	],
-	"font_size": 15,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"API Blueprint",
+		"DocBlockr",
 		"Makefile",
 		"Vintage"
 	],
