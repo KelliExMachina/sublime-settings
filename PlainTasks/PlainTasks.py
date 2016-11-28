@@ -7,17 +7,18 @@ import re
 import webbrowser
 import itertools
 from datetime import datetime
-from datetime import timedelta
 
 platform = sublime.platform()
-ST2 = int(sublime.version()) < 3000
+ST3 = int(sublime.version()) >= 3000
 
-if ST2:
-    import locale
+if ST3:
+    from .APlainTasksCommon import PlainTasksBase, PlainTasksFold, get_all_projects_and_separators
+else:
+    from APlainTasksCommon import PlainTasksBase, PlainTasksFold, get_all_projects_and_separators
 
 # io is not operable in ST2 on Linux, but in all other cases io is better
 # https://github.com/SublimeTextIssues/Core/issues/254
-if ST2 and platform == 'linux':
+if not ST3 and platform == 'linux':
     import codecs as io
 else:
     import io
@@ -25,15 +26,6 @@ else:
 NT = platform == 'windows'
 if NT:
     import subprocess
-
-
-def get_all_projects_and_separators(view):
-    # because tmLanguage need \n to make background full width of window
-    # multiline headers are possible, thus we have to split em to be sure that
-    # one header == one line
-    projects = itertools.chain(*[view.lines(r) for r in view.find_by_selector('keyword.control.header.todo')])
-    return sorted(list(projects) +
-                  view.find_by_selector('meta.punctuation.separator.todo'))
 
 
 def check_parentheses(date_format, regex_group, is_date=False):
@@ -48,43 +40,6 @@ def check_parentheses(date_format, regex_group, is_date=False):
         except ValueError:
             parentheses = regex_group
     return parentheses
-
-
-class PlainTasksBase(sublime_plugin.TextCommand):
-    def run(self, edit, **kwargs):
-        settings = self.view.settings()
-
-        self.taskpaper_compatible = settings.get('taskpaper_compatible', False)
-        if self.taskpaper_compatible:
-            self.open_tasks_bullet = self.done_tasks_bullet = self.canc_tasks_bullet = '-'
-            self.before_date_space = ''
-        else:
-            self.open_tasks_bullet = settings.get('open_tasks_bullet', u'☐')
-            self.done_tasks_bullet = settings.get('done_tasks_bullet', u'✔')
-            self.canc_tasks_bullet = settings.get('cancelled_tasks_bullet', u'✘')
-            self.before_date_space = settings.get('before_date_space', ' ')
-
-        translate_tabs_to_spaces = settings.get('translate_tabs_to_spaces', False)
-        self.before_tasks_bullet_spaces = ' ' * settings.get('before_tasks_bullet_margin', 1) if not self.taskpaper_compatible and translate_tabs_to_spaces else '\t'
-        self.tasks_bullet_space = settings.get('tasks_bullet_space', ' ' if self.taskpaper_compatible or translate_tabs_to_spaces else '\t')
-
-        self.date_format = settings.get('date_format', '(%y-%m-%d %H:%M)')
-        if settings.get('done_tag', True) or self.taskpaper_compatible:
-            self.done_tag = "@done"
-            self.canc_tag = "@cancelled"
-        else:
-            self.done_tag = ""
-            self.canc_tag = ""
-
-        self.project_postfix = settings.get('project_tag', True)
-        self.archive_name = settings.get('archive_name', 'Archive:')
-        # org-mode style archive stuff
-        self.archive_org_default_filemask = u'{dir}{sep}{base}_archive{ext}'
-        self.archive_org_filemask = settings.get('archive_org_filemask', self.archive_org_default_filemask)
-
-        if ST2:
-            self.sys_enc = locale.getpreferredencoding()
-        self.runCommand(edit, **kwargs)
 
 
 class PlainTasksNewCommand(PlainTasksBase):
@@ -196,7 +151,7 @@ class PlainTasksCompleteCommand(PlainTasksBase):
                 replacement = u'%s%s%s' % (grps[0], self.done_tasks_bullet, grps[2])
                 self.view.replace(edit, line, replacement)
                 self.view.run_command(
-                    'calculate_time_for_task', {
+                    'plain_tasks_calculate_time_for_task', {
                         'started_matches': started_matches,
                         'toggle_matches': toggle_matches,
                         'done_line_end': done_line_end,
@@ -205,7 +160,7 @@ class PlainTasksCompleteCommand(PlainTasksBase):
             elif 'header' in current_scope:
                 eol = self.view.insert(edit, line.end(), done_line_end)
                 self.view.run_command(
-                    'calculate_time_for_task', {
+                    'plain_tasks_calculate_time_for_task', {
                         'started_matches': started_matches,
                         'toggle_matches': toggle_matches,
                         'done_line_end': done_line_end,
@@ -213,7 +168,7 @@ class PlainTasksCompleteCommand(PlainTasksBase):
                 )
                 indent = re.match('^(\s*)\S', line_contents, re.U)
                 self.view.insert(edit, line.begin() + len(indent.group(1)), '%s ' % self.done_tasks_bullet)
-                self.view.run_command('calculate_total_time_for_project', {'start': line.a})
+                self.view.run_command('plain_tasks_calculate_total_time_for_project', {'start': line.a})
             elif 'completed' in current_scope:
                 grps = done_matches.groups()
                 parentheses = check_parentheses(self.date_format, grps[4] or '')
@@ -228,7 +183,7 @@ class PlainTasksCompleteCommand(PlainTasksBase):
                 self.view.replace(edit, line, replacement.rstrip())
                 offset = -offset
                 self.view.run_command(
-                    'calculate_time_for_task', {
+                    'plain_tasks_calculate_time_for_task', {
                         'started_matches': started_matches,
                         'toggle_matches': toggle_matches,
                         'done_line_end': done_line_end,
@@ -274,7 +229,7 @@ class PlainTasksCancelCommand(PlainTasksBase):
                 replacement = u'%s%s%s' % (grps[0], self.canc_tasks_bullet, grps[2])
                 self.view.replace(edit, line, replacement)
                 self.view.run_command(
-                    'calculate_time_for_task', {
+                    'plain_tasks_calculate_time_for_task', {
                         'started_matches': started_matches,
                         'toggle_matches': toggle_matches,
                         'done_line_end': canc_line_end,
@@ -284,7 +239,7 @@ class PlainTasksCancelCommand(PlainTasksBase):
             elif 'header' in current_scope:
                 eol = self.view.insert(edit, line.end(), canc_line_end)
                 self.view.run_command(
-                    'calculate_time_for_task', {
+                    'plain_tasks_calculate_time_for_task', {
                         'started_matches': started_matches,
                         'toggle_matches': toggle_matches,
                         'done_line_end': canc_line_end,
@@ -293,7 +248,7 @@ class PlainTasksCancelCommand(PlainTasksBase):
                 )
                 indent = re.match('^(\s*)\S', line_contents, re.U)
                 self.view.insert(edit, line.begin() + len(indent.group(1)), '%s ' % self.canc_tasks_bullet)
-                self.view.run_command('calculate_total_time_for_project', {'start': line.a})
+                self.view.run_command('plain_tasks_calculate_total_time_for_project', {'start': line.a})
             elif 'completed' in current_scope:
                 sublime.status_message('You cannot cancel what have been done, can you?')
                 # grps = done_matches.groups()
@@ -441,7 +396,8 @@ class PlainTasksNewTaskDocCommand(sublime_plugin.WindowCommand):
     def run(self):
         view = self.window.new_file()
         view.settings().add_on_change('color_scheme', lambda: self.set_proper_scheme(view))
-        view.set_syntax_file('Packages/PlainTasks/PlainTasks.tmLanguage')
+        view.set_syntax_file('Packages/PlainTasks/PlainTasks.sublime-syntax' if ST3 else
+                             'Packages/PlainTasks/PlainTasks.tmLanguage')
 
     def set_proper_scheme(self, view):
         if view.id() != sublime.active_window().active_view().id():
@@ -469,7 +425,7 @@ class PlainTasksOpenUrlCommand(sublime_plugin.TextCommand):
             # optional select URL
             self.view.sel().add(rgn)
             url = self.view.substr(rgn)
-            if NT and all([not ST2, ':' in url]):
+            if NT and all([ST3, ':' in url]):
                 # webbrowser uses os.startfile() under the hood, and it is not reliable in py3;
                 # thus call start command for url with scheme (eg skype:nick) and full path (eg c:\b)
                 subprocess.Popen(['start', url], shell=True)
@@ -544,13 +500,13 @@ class PlainTasksOpenLinkCommand(sublime_plugin.TextCommand):
         if res[3] == 'f':
             return [res[0], "line: %d column: %d" % (int(res[1]), int(res[2]))]
         elif res[3] == 'd':
-            return [res[0], 'Add folder to project' if not ST2 else 'Folders are supported only in Sublime 3']
+            return [res[0], 'Add folder to project' if ST3 else 'Folders are supported only in Sublime 3']
 
     def _on_panel_selection(self, selection):
         if selection >= 0:
             res = self._current_res[selection]
             win = sublime.active_window()
-            if ST2 and res[3] == "d":
+            if not ST3 and res[3] == "d":
                 return sublime.status_message('Folders are supported only in Sublime 3')
             elif res[3] == "d":
                 data = win.project_data()
@@ -658,134 +614,6 @@ class PlainTasksSortByDate(PlainTasksBase):
                 eol += self.view.insert(edit, eol, '\n' + re.sub('^\([\d\w,\.:\-\/ ]*\)([^\b]*$)', '\\1', a))
         else:
             sublime.status_message("Nothing to sort")
-
-
-class PlainTaskInsertDate(PlainTasksBase):
-    def runCommand(self, edit):
-        for s in reversed(list(self.view.sel())):
-            self.view.insert(edit, s.b, datetime.now().strftime(self.date_format))
-
-
-class PlainTasksReplaceShortDate(PlainTasksBase):
-    def runCommand(self, edit):
-        self.date_format = self.date_format.strip('()')
-        now = datetime.now()
-
-        s = self.view.sel()[0]
-        start, end = s.a, s.b
-        while self.view.substr(start) != '(':
-            start -= 1
-        while self.view.substr(end) != ')':
-            end += 1
-        self.rgn = sublime.Region(start + 1, end)
-        matchstr = self.view.substr(self.rgn)
-        # print(matchstr)
-
-        if '+' in matchstr:
-            date = self.increase_date(matchstr, now)
-        else:
-            date = self.convert_date(matchstr, now)
-
-        self.view.replace(edit, self.rgn, date)
-        offset = start + len(date) + 2
-        self.view.sel().clear()
-        self.view.sel().add(sublime.Region(offset, offset))
-
-    def increase_date(self, matchstr, now):
-        # relative from date of creation if any
-        if '++' in matchstr:
-            line_content = self.view.substr(self.view.line(self.rgn))
-            created = re.search(r'(?mxu)@created\(([\d\w,\.:\-\/ @]*)\)', line_content)
-            if created:
-                try:
-                    now = datetime.strptime(created.group(1), self.date_format)
-                except ValueError as e:
-                    return sublime.error_message('PlainTasks:\n\n FAILED date convertion: %s' % e)
-
-        match_obj = re.search(r'''(?mxu)
-            \s*\+\+?\s*
-            (?:
-             (?P<number>\d*(?![:.]))\s*
-             (?P<days>[Dd]?)
-             (?P<weeks>[Ww]?)
-             (?! \d*[:.])
-            )?
-            \s*
-            (?:
-             (?P<hour>\d*)
-             [:.]
-             (?P<minute>\d*)
-            )?''', matchstr)
-        number = int(match_obj.group('number') or 0)
-        days   = match_obj.group('days')
-        weeks  = match_obj.group('weeks')
-        hour   = int(match_obj.group('hour') or 0)
-        minute = int(match_obj.group('minute') or 0)
-        if not (number or hour or minute) or (not number and (days or weeks)):
-            # set 1 if number is ommited, i.e.
-            #   @due(+) == @due(+1) == @due(+1d)
-            #   @due(+w) == @due(+1w)
-            number = 1
-        delta = now + timedelta(days=(number*7 if weeks else number), minutes=minute, hours=hour)
-        return delta.strftime(self.date_format)
-
-    def convert_date(self, matchstr, now):
-        match_obj = re.search(r'''(?mxu)
-            (?:\s*
-             (?P<yearORmonthORday>\d*(?!:))
-             (?P<sep>[-\.])?
-             (?P<monthORday>\d*)
-             (?P=sep)?
-             (?P<day>\d*)
-             (?! \d*:)(?# e.g. '23:' == hour, but '1 23:' == day=1, hour=23)
-            )?
-            \s*
-            (?:
-             (?P<hour>\d*)
-             :
-             (?P<minute>\d*)
-            )?''', matchstr)
-        year  = now.year
-        month = now.month
-        day   = int(match_obj.group('day') or 0)
-        # print(day)
-        if day:
-            year  = int(match_obj.group('yearORmonthORday'))
-            month = int(match_obj.group('monthORday'))
-        else:
-            day = int(match_obj.group('monthORday') or 0)
-            # print(day)
-            if day:
-                month = int(match_obj.group('yearORmonthORday'))
-                if month < now.month:
-                    year += 1
-            else:
-                day = int(match_obj.group('yearORmonthORday') or 0)
-                # print(day)
-                if 0 < day <= now.day:
-                    # expect next month
-                    month += 1
-                    if month == 13:
-                        year += 1
-                        month = 1
-                elif not day:  # @due(0) == today
-                    day = now.day
-                # else would be day>now, i.e. future day in current month
-        hour   = match_obj.group('hour')   or now.hour
-        minute = match_obj.group('minute') or now.minute
-        hour, minute = int(hour), int(minute)
-        if year < 100:
-            year += 2000
-
-        # print(year, month, day, hour, minute)
-        try:
-            date = datetime(year, month, day, hour, minute, 0).strftime(self.date_format)
-        except ValueError as e:
-            return sublime.error_message('PlainTasks:\n\n'
-                '%s:\n year:\t%d\n month:\t%d\n day:\t%d\n HH:\t%d\n MM:\t%d\n' %
-                (e, year, month, day, hour, minute))
-        else:
-            return date
 
 
 class PlainTasksRemoveBold(sublime_plugin.TextCommand):
@@ -970,3 +798,40 @@ class PlainTasksArchiveOrgCommand(PlainTasksBase):
             region = sublime.Region(line.a, region.b)
 
         return region
+
+
+class PlainTasksFoldToTags(PlainTasksFold):
+    TAG = r'(?u)@\w+'
+
+    def run(self, edit):
+        tag_sels = [s for s in list(self.view.sel()) if 'tag.todo' in self.view.scope_name(s.a)]
+        if not tag_sels:
+            sublime.status_message('Cursor(s) must be placed on tag(s)')
+            return
+
+        tags = self.extract_tags(tag_sels)
+        tasks = [self.view.line(f) for f in self.view.find_all(r'[ \t](%s)' % '|'.join(tags)) if 'pending' in self.view.scope_name(f.a)]
+        if not tasks:
+            sublime.status_message('Pending tasks with given tags are not found')
+            print(tags, tag_sels)
+            return
+        self.exec_folding(self.add_projects_and_notes(tasks))
+
+    def extract_tags(self, tag_sels):
+        tags = []
+        for s in tag_sels:
+            start = end = s.a
+            limit = self.view.size()
+            while all(self.view.substr(start) != c for c in '@ \n'):
+                start -= 1
+                if start == 0:
+                    break
+            while all(self.view.substr(end) != c for c in '( @\n'):
+                end += 1
+                if end == limit:
+                    break
+            match = re.match(self.TAG, self.view.substr(sublime.Region(start, end)))
+            tag =  match.group(0) if match else False
+            if tag and tag not in tags:
+                tags.append(tag)
+        return tags
