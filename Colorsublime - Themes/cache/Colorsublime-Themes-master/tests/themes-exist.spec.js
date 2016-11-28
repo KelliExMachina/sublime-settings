@@ -11,7 +11,7 @@ describe('All the themes exist', function() {
 		return theme.FileName;
 	}).sort();
 
-	console.log(fileNames,'-',jsonNames);
+	// console.log(fileNames,'-',jsonNames);
 
 	it('All theme files exist in themes JSON', function() {
 		fileNames.forEach(function(fileName, i) {
@@ -19,9 +19,15 @@ describe('All the themes exist', function() {
 		});
 	});
 
-	it('All theme JSON entries exist in thems folder', function() {
+	it('All theme JSON entries exist in themes folder', function() {
 		jsonNames.forEach(function(jsonName, i) {
 			expect(jsonName).to.equal(fileNames[i]);
+		});
+	});
+
+	it('No spaces allowed in the themes files names', function() {
+		jsonNames.forEach(function(jsonName, i) {
+			expect(jsonName).to.not.match(/\s/g, 'the theme "' + jsonName + '" must not contain spaces!');
 		});
 	});
 });
