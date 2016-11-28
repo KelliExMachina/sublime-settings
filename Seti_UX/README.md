@@ -4,61 +4,24 @@
 
 Seti Improved Scheme/Syntax-HL for ST.
 
-## Supported Syntax
+## Ports
 
-```text
-SublimeLinter
-GitGutter
-MarkDown (& MarkDown Extended)
-diff
-MakeFile
-Ruby
-Python
-JSON, XML
-JS, Coffee
-Html, Jade
-Css, Less, Sass/Scss
-PHP, Laravel Blade, SQL
-```
+* [JetBrains](https://github.com/zchee/Seti_JetBrains) thanks to [@zchee](https://github.com/zchee)
+* [iTerm](https://github.com/ginfuru/iTerm-Seti_UX) thanks to [@ginfuru](https://github.com/ginfuru)
+* [Terminal](https://github.com/ginfuru/iTerm-Seti_UX) thanks to [@ginfuru](https://github.com/ginfuru)
+* [HyperTerminal](https://github.com/ginfuru/iTerm-Seti_UX) thanks to [@ginfuru](https://github.com/ginfuru)
 
-## Extended Support
-
-Check [ctf0/Seti_UX#2](https://github.com/ctf0/Seti_UX/issues/2).
 
 ## Previews
 
 **HTML**
 
-![Seti Screenshot](./ss/html.png)
-
-**BLADE**
-
-![Seti Screenshot](./ss/blade.png)
+![Seti Screenshot](./ss/html.jpg)
 
 **PHP**
 
-![Seti Screenshot](./ss/php.png)
+![Seti Screenshot](./ss/php.jpg)
 
-**DIFF**
+**JS**
 
-![Seti Screenshot](./ss/diff.png)
-
-**JADE**
-
-![Seti Screenshot](./ss/jade.png)
-
-**PYTHON**
-
-![Seti Screenshot](./ss/python.png)
-
-**MARKDOWN**
-
-![Seti Screenshot](./ss/md.png)
-
-**JSON** (up-to 19 level)
-
-![Seti Screenshot](./ss/json.png)
-
-**XML**
-
-![Seti Screenshot](./ss/xml.png)
+![Seti Screenshot](./ss/js.jpg)
