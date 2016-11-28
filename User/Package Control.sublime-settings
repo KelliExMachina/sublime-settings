@@ -7,8 +7,10 @@
 	[
 		"AlignTab",
 		"Autotools",
+		"ayu",
 		"C Improved",
 		"CMake",
+		"Colorsublime",
 		"Dockerfile Syntax Highlighting",
 		"DoxyDoxygen",
 		"EditorConfig",
@@ -16,6 +18,7 @@
 		"Git Config",
 		"GitGutter",
 		"Handlebars",
+		"INI",
 		"InsertDate",
 		"Jinja2",
 		"Makefile Improved",
@@ -30,12 +33,12 @@
 		"Predawn",
 		"ProjectManager",
 		"RSpec",
-		"Rust",
+		"Rust Enhanced",
 		"Sass",
 		"Scheme",
 		"Seti_UI",
 		"Seti_UX",
-		"Theme - Spacegray",
+		"Skins",
 		"x86 and x86_64 Assembly"
 	]
 }

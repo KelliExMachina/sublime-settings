@@ -45,7 +45,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Base-16 Color Scheme/base16-eighties.dark.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Bittersweet.tmTheme",
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"enable_tab_scrolling": false,
@@ -96,7 +96,6 @@
 	"font_face": "Terminus",
 	"font_options":
 	[
-		"no_round"
 	],
 	"font_size": 16,
 	"highlight_line": true,
@@ -107,7 +106,7 @@
 		"Makefile",
 		"Vintage"
 	],
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": true,
 	"overlay_scroll_bars": "enabled",
 	"preview_on_click": true,
 	"rulers":
@@ -121,8 +120,11 @@
 	"sidebar_default": true,
 	"spell_check": false,
 	"tab_size": 2,
-	"theme": "Seti_orig.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"ui_big_tabs": true,
+	"ui_fix_tab_labels": true,
+	"ui_separator": true,
 	"word_wrap": false
 }
