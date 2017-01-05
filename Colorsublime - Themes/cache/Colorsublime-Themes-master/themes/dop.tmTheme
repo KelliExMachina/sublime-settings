@@ -59,7 +59,7 @@
 				<key>foreground</key>
 				<string>#1fa1f1</string>
 				<key>fontStyle</key>
-			<string>bold</string>
+        		<string>bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -170,7 +170,7 @@
 				<key>foreground</key>
 				<string>#CFE36D</string>
 				<key>fontStyle</key>
-			<string>bold</string>
+        		<string>bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -199,7 +199,7 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#E12977</string>
-
+				
 			</dict>
 		</dict>
 		<dict>

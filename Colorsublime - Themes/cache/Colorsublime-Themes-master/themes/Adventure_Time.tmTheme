@@ -355,7 +355,7 @@
 			<key>settings</key>
 			<dict>
 			    <key>fontStyle</key>
-			<string></string>
+    			<string></string>
 				<key>foreground</key>
 				<string>#f25a55</string>
 			</dict>
@@ -368,7 +368,7 @@
 			<key>settings</key>
 			<dict>
 			    <key>fontStyle</key>
-			<string></string>
+    			<string></string>
 				<key>foreground</key>
 				<string>#f25a55</string>
 			</dict>

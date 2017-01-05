@@ -1,0 +1,33 @@
+// Settings in here override those in "${packages}/DoxyDoxygen/Doxy.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+
+    // List of possible styles for comments (first match is better).
+    "preferred_comments_styles": [
+        [
+            ["///"],
+            "///"
+        ],
+        [
+            "/**",
+            " *"
+        ],
+        [
+            ["/*", "-", "*//**"],   // <=> /*-------------------*//**
+            " *"
+        ],
+        // [
+        //     [ "//", "/", "" ],
+        //     [ "//", "/", " ", " ", "/", "//" ],
+        //     [ "", "/", "//" ]
+        // ],
+        [
+            "##",
+            "##"
+        ],
+        [
+            ["#", "-"],             // <=> #-------------------------
+            "##"
+        ]
+    ],
+}

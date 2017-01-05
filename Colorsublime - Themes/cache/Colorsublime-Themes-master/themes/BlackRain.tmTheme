@@ -135,8 +135,8 @@
                 <string>bracket.curly</string>
                 <key>settings</key>
                 <dict>
-				<key>fontStyle</key>
-				<string>bold</string>
+                		<key>fontStyle</key>
+                		<string>bold</string>
                     <key>background</key>
                     <string>#3399FF</string>
                     <key>foreground</key>

@@ -569,7 +569,7 @@
 			<!-- = -->
 			<dict>
 				<key>scope</key>
-				<string>punctuation.separator.key-value.html</string>
+				<string>punctuation.separator.key-value.html, meta.tag.inline.any.html, source.js.embedded.html, meta.tag.block.any.html, meta.tag.any.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -590,7 +590,7 @@
 			<!-- attrs -->
 			<dict>
 				<key>scope</key>
-				<string>entity.other.attribute-name.html, meta.tag.any.html, entity.other.attribute-name.style.html, entity.other.attribute-name.class.html, entity.other.attribute-name.event.html</string>
+				<string>entity.other.attribute-name.html, entity.other.attribute-name.style.html, entity.other.attribute-name.class.html, entity.other.attribute-name.event.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -708,7 +708,7 @@
 			<!-- '' / "" -->
 			<dict>
 				<key>scope</key>
-				<string>string.quoted.single.js, string.quoted.double.js</string>
+				<string>string.quoted.single.js, string.quoted.double.js, string.template.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -720,6 +720,26 @@
 			<dict>
 				<key>scope</key>
 				<string>keyword.operator.ternary.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#ffd200</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.import.js keyword.control.import-export.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#CD3F45</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.export.js keyword.control.import-export.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -882,6 +902,42 @@
 				</dict>
 			</dict>
 
+			<!--================== OOP ================== -->
+			<!-- class -->
+			<dict>
+				<key>scope</key>
+				<string>meta.class.js entity.name.class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#CD3F45</string>
+				</dict>
+			</dict>
+
+			<!-- extend -->
+			<dict>
+				<key>scope</key>
+				<string>meta.class.js storage.modifier.extends.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#1CFF7B</string>
+				</dict>
+			</dict>
+
+			<!-- extend class -->
+			<dict>
+				<key>scope</key>
+				<string>meta.class.js entity.other.inherited-class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#fda100</string>
+					<key>background</key>
+					<string>#CD3F4530</string>
+				</dict>
+			</dict>
+
 			<!-- ====================================
 			Vue
 			====================================== -->
@@ -899,7 +955,7 @@
 			<!-- = -->
 			<dict>
 				<key>scope</key>
-				<string>text.html.vue meta.tag.block.any.html, text.html.vue meta.tag.inline.any.html, text.html.vue source.css.embedded.html, text.html.vue source.js.embedded.html</string>
+				<string>text.html.vue source.css.embedded.html, meta.tag.other.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -1746,17 +1802,6 @@
 			Nunjucks
 			====================================== -->
 
-			<!-- = -->
-			<dict>
-				<key>scope</key>
-				<string>text.html.nunjucks meta</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#009FFF</string>
-				</dict>
-			</dict>
-
 			<!-- tags -->
 			<dict>
 				<key>scope</key>
@@ -1789,6 +1834,87 @@
 				<dict>
 					<key>foreground</key>
 					<string>#aa00aa</string>
+				</dict>
+			</dict>
+
+			<!--  ====================================
+			Twig
+			====================================== -->
+
+			<dict>
+				<key>scope</key>
+				<string>punctuation.section.tag.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FFDC00</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>keyword.control.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A83B40</string>
+					<key>background</key>
+					<string>#A83B4010</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>variable.other.twig, string.quoted.single.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#009FFF</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>variable.other.property.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#aa00aa</string>
+					<!-- <string>#bce6fe</string> -->
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>punctuation.separator.property.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#f68600</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.function-call.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#bce6fe</string>
+					<!-- <string>#fff</string> -->
+					<!-- <string>#CD3F45</string> -->
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.tag.template.value.twig variable.other.twig</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#fff</string>
+					<key>background</key>
+					<string>#41535b30</string>
 				</dict>
 			</dict>
 
@@ -2008,9 +2134,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#9FD0D8</string>
-					<key>background</key>
-					<string>#9FD0D820</string>
+					<string>#D8F6FF</string>
 				</dict>
 			</dict>
 			<dict>
@@ -2030,7 +2154,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#FFF203</string>
+					<string>#FFDC00</string>
 				</dict>
 			</dict>
 
@@ -2346,13 +2470,11 @@
 				<key>name</key>
 				<string>Quotes</string>
 				<key>scope</key>
-				<string>string.quoted.double.css, punctuation.definition.string.begin.css, punctuation.definition.string.end.css, string.quoted.single.css, string.quoted.single.css comment markup.raw, string.quoted.double.css comment markup.raw, source.css.less meta.property-value.css string.quoted.double.css punctuation.definition.string.begin.css, source.css.less meta.property-value.css string.quoted.double.css punctuation.definition.string.end.css, meta.selector.css meta.attribute-selector.css string.quoted.double.attribute-value.css, meta.attribute-selector.css string.quoted.double.attribute-value.css</string>
+				<string>punctuation.definition.string.begin.css, punctuation.definition.string.end.css, string.quoted.single.css, string.quoted.single.css comment markup.raw, string.quoted.double.css comment markup.raw, source.css.less meta.property-value.css string.quoted.double.css punctuation.definition.string.begin.css, source.css.less meta.property-value.css string.quoted.double.css punctuation.definition.string.end.css, meta.selector.css meta.attribute-selector.css string.quoted.double.attribute-value.css, meta.attribute-selector.css string.quoted.double.attribute-value.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#9FD0D8</string>
-					<key>background</key>
-					<string>#009FFF10</string>
+					<string>#009FFF</string>
 				</dict>
 			</dict>
 
@@ -2410,6 +2532,76 @@
 				<dict>
 					<key>foreground</key>
 					<string>#FF0040</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>string.quoted.double.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#009FFF</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>punctuation.definition.constant.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#fff</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.at-rule.import.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#009FFF</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta variable.parameter.url.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D8F6FF</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>punctuation.definition.keyword.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F6AA11</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>keyword.control.at-rule.import.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#009FFF</string>
+				</dict>
+			</dict>
+
+			<dict>
+				<key>scope</key>
+				<string>meta.property-value.scss</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#CD3F45</string>
 				</dict>
 			</dict>
 
@@ -4274,7 +4466,7 @@
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#fed02e</string>
+					<string>#ffd200</string>
 				</dict>
 			</dict>
 

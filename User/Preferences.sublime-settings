@@ -22,7 +22,9 @@
 	],
 	"always_show_minimap_viewport": true,
 	"atomic_save": true,
-	"auto_complete": false,
+	"auto_complete": true,
+    "auto_complete_commit_on_tab": true,
+    "auto_complete_selector": "text, source - comment",
 	"binary_file_patterns":
 	[
 		"*.dds",
@@ -37,7 +39,8 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip"
+		"*.zip",
+        "*.dump"
 	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 3,
@@ -97,12 +100,11 @@
 	"font_options":
 	[
 	],
-	"font_size": 16,
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"API Blueprint",
-		"DocBlockr",
 		"Makefile",
 		"Vintage"
 	],
@@ -126,5 +128,7 @@
 	"ui_big_tabs": true,
 	"ui_fix_tab_labels": true,
 	"ui_separator": true,
-	"word_wrap": false
+	"ui_wide_scrollbars": true,
+	"word_wrap": false,
+	"wrap_width": 80
 }

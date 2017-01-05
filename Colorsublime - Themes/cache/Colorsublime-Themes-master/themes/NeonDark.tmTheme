@@ -22,8 +22,8 @@
 	            <key>foreground</key>
 	            <string>#F92672</string>
 	        </dict>
-	</dict>
-	<dict>
+    	</dict>
+    	<dict>
 	        <key>name</key>
 	        <string>Doctype Tags</string>
 	        <key>scope</key>
@@ -33,8 +33,8 @@
 	            <key>foreground</key>
 	            <string>#F92672</string>
 	        </dict>
-	</dict>
-	<dict>
+    	</dict>
+    	<dict>
 			<key>name</key>
 	        <string>Attribute Value Separator</string>
 	        <key>scope</key>
@@ -44,8 +44,8 @@
 	            <key>foreground</key>
 	            <string>#F92672</string>
 	        </dict>
-	</dict>
-	<dict>
+    	</dict>
+    	<dict>
 	        <key>name</key>
 	        <string>Equals</string>
 	        <key>scope</key>
@@ -55,52 +55,52 @@
 	            <key>foreground</key>
 	            <string>#EEE</string>
 	        </dict>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Class Method Definition</string>
-		<key>scope</key>
-		<string>meta.class.js meta.method.js entity.name.method.js</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#62b4fa</string>
-		</dict>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Class Method</string>
-		<key>scope</key>
-		<string>meta.class.js entity.name.function.js</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#62b4fa</string>
-		</dict>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Class This</string>
-		<key>scope</key>
-		<string>meta.class.js variable.language.this.js</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#F92672</string>
-		</dict>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Object Property</string>
-		<key>scope</key>
-		<string>meta.property.object.js</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#62b4fa</string>
-		</dict>
-	</dict>
-	<dict>
+    	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>Class Method Definition</string>
+    		<key>scope</key>
+    		<string>meta.class.js meta.method.js entity.name.method.js</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#62b4fa</string>
+    		</dict>
+    	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>Class Method</string>
+    		<key>scope</key>
+    		<string>meta.class.js entity.name.function.js</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#62b4fa</string>
+    		</dict>
+    	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>Class This</string>
+    		<key>scope</key>
+    		<string>meta.class.js variable.language.this.js</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#F92672</string>
+    		</dict>
+    	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>Object Property</string>
+    		<key>scope</key>
+    		<string>meta.property.object.js</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#62b4fa</string>
+    		</dict>
+    	</dict>
+    	<dict>
 			<key>name</key>
 			<string>Numbers</string>
 			<key>scope</key>
@@ -111,28 +111,28 @@
 				<string>#FD971F</string>
 			</dict>
 		</dict>
-	<dict>
-		<key>name</key>
-		<string>Function</string>
-		<key>scope</key>
-		<string>variable.function.js</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#62b4fa</string>
-		</dict>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>CSS Property Name</string>
-		<key>scope</key>
-		<string>meta.property-name.css</string>
-		<key>settings</key>
-		<dict>
-			<key>foreground</key>
-			<string>#F92672</string>
-		</dict>
-	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>Function</string>
+    		<key>scope</key>
+    		<string>variable.function.js</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#62b4fa</string>
+    		</dict>
+    	</dict>
+    	<dict>
+    		<key>name</key>
+    		<string>CSS Property Name</string>
+    		<key>scope</key>
+    		<string>meta.property-name.css</string>
+    		<key>settings</key>
+    		<dict>
+    			<key>foreground</key>
+    			<string>#F92672</string>
+    		</dict>
+    	</dict>
 		<dict>
 			<key>settings</key>
 			<dict>

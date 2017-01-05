@@ -97,7 +97,7 @@
 			<dict>
 			</dict>
 		</dict>
-
+		
 
 		<dict>
 			<key>name</key>
@@ -375,7 +375,7 @@
 				<string>#5ECFFF</string>
 			</dict>
 		</dict>
-
+		
 		<dict>
 			<key>name</key>
 			<string>source.js</string>
