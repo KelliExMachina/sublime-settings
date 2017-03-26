@@ -3,11 +3,11 @@
 <plist version="1.0">
     <dict>
         <key>scope</key>
-        <string>source.js.gruntfile, source.coffee.gruntfile</string>
+        <string>source.js.mix</string>
         <key>settings</key>
         <dict>
             <key>icon</key>
-            <string>file_type_gruntfile</string>
+            <string>file_type_laravelmix</string>
         </dict>
     </dict>
 </plist>

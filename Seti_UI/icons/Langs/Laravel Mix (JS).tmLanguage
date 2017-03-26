@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>NPM (JSON)</string>
+	<string>Laravel Mix (JS)</string>
 	<key>fileTypes</key>
 	<array>
-		<string>package.json</string>
-		<string>.npmrc</string>
+		<string>webpack.mix.js</string>
 	</array>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>include</key>
-			<string>source.json</string>
+			<string>source.js</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.json.npm</string>
+	<string>source.js.mix</string>
 </dict>
 </plist>

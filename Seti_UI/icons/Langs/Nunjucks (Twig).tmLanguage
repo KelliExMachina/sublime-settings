@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>NPM (JSON)</string>
+	<string>Nunjucks (Twig)</string>
 	<key>fileTypes</key>
 	<array>
-		<string>package.json</string>
-		<string>.npmrc</string>
+		<string>.njk</string>
 	</array>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>include</key>
-			<string>source.json</string>
+			<string>text.html.twig</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.json.npm</string>
+	<string>source.njk</string>
 </dict>
 </plist>
