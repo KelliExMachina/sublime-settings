@@ -5,15 +5,11 @@
     // List of possible styles for comments (first match is better).
     "preferred_comments_styles": [
         [
-            ["///"],
+            "///",
             "///"
         ],
         [
             "/**",
-            " *"
-        ],
-        [
-            ["/*", "-", "*//**"],   // <=> /*-------------------*//**
             " *"
         ],
         // [

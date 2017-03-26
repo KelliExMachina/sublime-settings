@@ -23,8 +23,7 @@
 	"always_show_minimap_viewport": true,
 	"atomic_save": true,
 	"auto_complete": true,
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_selector": "text, source - comment",
+	"auto_complete_commit_on_tab": true,
 	"binary_file_patterns":
 	[
 		"*.dds",
@@ -40,7 +39,7 @@
 		"*.tga",
 		"*.ttf",
 		"*.zip",
-        "*.dump"
+		"*.dump"
 	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 3,
@@ -96,7 +95,7 @@
 		".gemtags",
 		".asset-cache"
 	],
-	"font_face": "Terminus",
+	"font_face": "Monaco",
 	"font_options":
 	[
 	],
@@ -106,6 +105,7 @@
 	[
 		"API Blueprint",
 		"Makefile",
+		"PKGBUILD",
 		"Vintage"
 	],
 	"open_files_in_new_window": true,

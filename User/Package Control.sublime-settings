@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"PKGBUILD"
 	],
 	"installed_packages":
 	[
@@ -12,7 +13,6 @@
 		"CMake",
 		"Colorsublime",
 		"Dockerfile Syntax Highlighting",
-		"DoxyDoxygen",
 		"EditorConfig",
 		"Git",
 		"Git Config",
@@ -33,8 +33,6 @@
 		"Predawn",
 		"ProjectManager",
 		"RSpec",
-		"Rust Enhanced",
-		"RustAutoComplete",
 		"Sass",
 		"Scheme",
 		"Seti_UI",
