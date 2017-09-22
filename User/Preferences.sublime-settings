@@ -18,7 +18,12 @@
 		"admin",
 		"app",
 		"Tablespace",
-		"Fixnum"
+		"Fixnum",
+		"warmwaffles",
+		"github",
+		"ipad",
+		"tv",
+		"jwt"
 	],
 	"always_show_minimap_viewport": true,
 	"atomic_save": true,
@@ -47,7 +52,8 @@
 	"caret_extra_width": 2,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorsublime - Themes/Bittersweet.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Dark-Dracula.tmTheme",
+	"detect_indentation": false,
 	"drag_text": false,
 	"draw_minimap_border": true,
 	"enable_tab_scrolling": false,
@@ -93,9 +99,10 @@
 		".tags",
 		".tags_sorted_by_file",
 		".gemtags",
-		".asset-cache"
+		".asset-cache",
+		".vscode"
 	],
-	"font_face": "Monaco",
+	"font_face": "Monospace",
 	"font_options":
 	[
 	],
@@ -103,9 +110,9 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"API Blueprint",
+		"GitGutter",
 		"Makefile",
-		"PKGBUILD",
+		"RustAutoComplete",
 		"Vintage"
 	],
 	"open_files_in_new_window": true,
@@ -122,7 +129,7 @@
 	"sidebar_default": true,
 	"spell_check": false,
 	"tab_size": 2,
-	"theme": "ayu-dark.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ui_big_tabs": true,

@@ -2,18 +2,19 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"PKGBUILD"
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AlignTab",
 		"Autotools",
-		"ayu",
 		"C Improved",
 		"CMake",
 		"Colorsublime",
 		"Dockerfile Syntax Highlighting",
+		"DoxyDoxygen",
 		"EditorConfig",
+		"Elixir",
 		"Git",
 		"Git Config",
 		"Handlebars",
@@ -21,7 +22,6 @@
 		"InsertDate",
 		"Jinja2",
 		"Makefile Improved",
-		"Markdown Extended",
 		"nginx",
 		"Ninja",
 		"OpenGL Shading Language (GLSL)",
@@ -31,6 +31,8 @@
 		"PostgreSQL Syntax Highlighting",
 		"Predawn",
 		"ProjectManager",
+		"RAML Syntax Highlighter",
+		"ReactJS",
 		"RSpec",
 		"Sass",
 		"Scheme",
@@ -38,6 +40,7 @@
 		"Seti_UX",
 		"Skins",
 		"TOML",
+		"TypeScript",
 		"x86 and x86_64 Assembly"
 	]
 }
